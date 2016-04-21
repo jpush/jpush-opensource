@@ -183,12 +183,21 @@
     font-size: 20px;
   }
 
-  #right_box #slogan_en,#slogan_zh,#slogan_img
+  #right_box #slogan_img
+  {
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align:center;
+  }
+
+  #right_box #slogan_en,#slogan_zh
   {
     padding: 10px;
     margin: 10px;
     color: #FFFFFF;
     font-size: 20px;
+    text-align:center;
   }
 
 
