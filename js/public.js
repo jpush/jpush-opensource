@@ -67,3 +67,50 @@ if (xmlhttp.readyState==4)
     }
   }
 }
+
+$.get("https://api.github.com/orgs/jpush/repos?page=1&per_page=100",function(data,status){
+    $("#num-repos").text(data.length);
+
+    data.sort(function(y,x){
+        return x["updated_at"].localeCompare(y["updated_at"]);
+        });
+    for (var i = 0; i < 3; i++) {
+        var $item_name = $("<li>");
+
+        var $name = $("<a>").attr("href", data[i]["html_url"]).text(data[i]["full_name"]);
+        $item_name.append($("<span>").addClass("name").append($name));
+
+        $item_name.appendTo("#recently-updated-repos");
+
+        var $item = $("<li>");
+
+        var pushed_at=data[i]["pushed_at"];
+        var date=pushed_at.substring(0,10);
+        //alert(date);
+
+        var $time = $("<a>").attr("href", data[i]["html_url"] + "/commits").text(date);
+        $item.append($("<span>").addClass("time").append($time));
+
+        $item.append('<span class="bullet">   </span>');
+
+        var $watchers = $("<a>").attr("href", data[i]["html_url"] + "/watchers").text(data[i]["watchers"] + " stargazers");
+        $item.append($("<span>").addClass("watchers").append($watchers));
+
+        $item.append('<span class="bullet">   </span>');
+
+        var $forks = $("<a>").attr("href", data[i]["html_url"]  + "/network").text(data[i]["forks"]+ " forks");
+        $item.append($("<span>").addClass("forks").append($forks));
+
+        $item.appendTo("#recently-updated-repos");
+    }
+    
+});
+
+$.get("https://api.github.com/orgs/jpush/members?page=1&per_page=100",function(data,status){
+    $("#num-members").text(data.length);
+});
+
+
+
+
+

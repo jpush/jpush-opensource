@@ -16,7 +16,6 @@
           var loading=document.getElementById("loading");
           wrapper.removeChild(loading);       
           loadXMLDoc('https://api.github.com/orgs/jpush/repos');
-
       }   
   }                  
 </script>
@@ -49,12 +48,26 @@
 <div id="description">
 <div id="box">
 <div id="left_box">
-<div id="top_box">Recently updated</div>
-<div id="bottom_box">Statistics</div>
+<div id="top_box">
+<div id="recently_updated">Recently updated</div>
+<div id="view_all"><a href="https://github.com/jpush">View All on GitHub</a></div>
+<div>
+  <ul id="recently-updated-repos"></ul>
+</div>
+</div>
+<div id="bottom_box">
+<div id="statistics"><p>Statistics</p> </div>
+<div id="num-members-span"><p>Members:
+<a id="num-members" href="https://github.com/orgs/jpush/people"></a>
+</p></div>
+<div id="num-repos-span"><p>Repositories:
+<a id="num-repos" href="https://github.com/jpush"></a>
+</p></div>
+
+</div>
 </div>
 
 <div id="right_box">
-  <div id="slogan_img"><p>Powering mobile apps</p></div>
   <div id="slogan_en"><p>Powering mobile apps</p></div>
   <div id="slogan_zh"><p>极光，为你的移动应用加油！</p></div>
 </div>
