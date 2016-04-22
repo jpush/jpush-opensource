@@ -46,17 +46,17 @@ if (xmlhttp.readyState==4)
           li_name.setAttribute("class", "name"); 
           ul.appendChild(li_name);
 
-          var li_description=document.createElement("li");
-          var description=document.createTextNode(obj[i].description);
-          li_description.appendChild(description); 
-          li_description.setAttribute("class", "description");        
-          ul.appendChild(li_description);
-
           var li_language=document.createElement("li");
           var language=document.createTextNode(obj[i].language);
           li_language.appendChild(language);  
           li_language.setAttribute("class", "language");     
           ul.appendChild(li_language);
+
+          var li_description=document.createElement("li");
+          var description=document.createTextNode(obj[i].description);
+          li_description.appendChild(description); 
+          li_description.setAttribute("class", "description");        
+          ul.appendChild(li_description);
 
           repos.appendChild(ul);
         };
