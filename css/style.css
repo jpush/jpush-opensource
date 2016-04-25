@@ -98,9 +98,9 @@
     float: left;
   }
 
-  #view_all
+  #view_all a
   {
-    color: #FFFFFF;
+    color: #72d3ef;
     font-size: 14px;
     margin-top: 10px;
     margin-left: 10px;
@@ -133,7 +133,8 @@
 
   #top_box ul li .name a
   {
-    font-size: 20px;
+    font-size: 16px;
+    color: #72d3ef;
   }
 
     #top_box ul li .time a, .bullet a,.watchers a,.forks  a
@@ -225,19 +226,26 @@
     float: left;
     background:rgba(0, 0, 0, 0.55);
     list-style-type: none;
+    word-break:break-all;
  
   }
 
   #wrapper  li
   {
     margin-top: 10px;
-    width: 150px;
+    width: 160px;
+    word-break:break-all;
   }
 
   .name
   {
     font-size: 20px;
     font-weight: bold;
+    color: #72d3ef;
+  }
+
+  .name a
+  {
     color: #72d3ef;
   }
 
