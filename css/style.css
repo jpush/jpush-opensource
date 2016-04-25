@@ -86,7 +86,7 @@
     height: 200px;
     float: left;
     color: #FFFFFF;
-    margin-left: 10px;
+    margin-left: 0px;
     background:rgba(0, 0, 0, 0.5);
   }
   #recently_updated
@@ -149,7 +149,7 @@
     height: 100px;
     color: #FFFFFF;
     margin-top: 220px;
-    margin-left: 10px;
+    margin-left: 0px;
     background:rgba(0, 0, 0, 0.5);
   }
 
