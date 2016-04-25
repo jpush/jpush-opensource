@@ -1,96 +1,114 @@
 <html>
-<head>
-  <title>JPush Open Source</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-  <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.js"></script>
-  <script src="js/public.js"></script>
-  <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-
-
-<script type="text/javascript" language="JavaScript">               
-  document.onreadystatechange = function () {   
-      if(document.readyState=="complete") {  
-          var wrapper=document.getElementById("wrapper");
-          var loading=document.getElementById("loading");
-          wrapper.removeChild(loading);       
+  
+  <head>
+    <title>
+      JPush Open Source
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js">
+    </script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.js">
+    </script>
+    <script src="js/public.js">
+    </script>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" language="JavaScript">
+      document.onreadystatechange = function() {
+        if (document.readyState == "complete") {
+          var wrapper = document.getElementById("wrapper");
+          var loading = document.getElementById("loading");
+          wrapper.removeChild(loading);
           loadXMLDoc('https://api.github.com/orgs/jpush/repos');
-      }   
-  }                  
-</script>
+        }
+      }
+    </script>
+  </head>
+  
+  <body>
+    <div id="header">
+      <div id="logo">
+        <a href="http://jpush.github.io/">
+          <img src="img/logo.png">
+        </a>
+      </div>
+      <div id="extra">
+        <div id="open_source">
+          <p>
+            open source
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="description">
+      <div id="box">
+        <div id="left_box">
+          <div id="top_box">
+            <div id="recently_updated">
+              Recently updated
+            </div>
+            <div id="view_all">
+              <a href="https://github.com/jpush">
+                View All on GitHub
+              </a>
+            </div>
+            <div>
+              <ul id="recently-updated-repos">
+              </ul>
+            </div>
+          </div>
+          <div id="bottom_box">
+            <div id="statistics">
+              <p>
+                Statistics
+              </p>
+            </div>
+            <div id="num-members-span">
+              <p>
+                Members:
+                <a id="num-members" href="https://github.com/orgs/jpush/people">
+                </a>
+              </p>
+            </div>
+            <div id="num-repos-span">
+              <p>
+                Repositories:
+                <a id="num-repos" href="https://github.com/jpush">
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="right_box">
+          <div id="slogan_img">
+            <img src="img/slogan_img.png">
+          </div>
+          <div id="slogan_en">
+            <p>
+              Powering mobile apps
+            </p>
+          </div>
+          <div id="slogan_zh">
+            <p>
+              极光，为你的移动应用加油！
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="wrap">
+      <div id="wrapper">
+        <div id="repos">
+        </div>
+        <div id="loading">
+          <p id="content">
+            loading
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="">
+    </a>
+  </body>
 
-</head>
-
-<body>
-<div id="header">
-
-<div id="logo">
-<a href="http://jpush.github.io/"><img src="img/logo.png"></a>
-</div>
-
-<div id="extra">
-
-<div id="open_source">
-<p>open source</p>
-</div>
-<!--
-<div id="search_bar">
-<input id="search"></input>
-<img src="img/search.png">
-</div>
--->
-</div>
-
-
-</div>
-
-<div id="description">
-<div id="box">
-<div id="left_box">
-<div id="top_box">
-<div id="recently_updated">Recently updated</div>
-<div id="view_all"><a href="https://github.com/jpush">View All on GitHub</a></div>
-<div>
-  <ul id="recently-updated-repos"></ul>
-</div>
-</div>
-<div id="bottom_box">
-<div id="statistics"><p>Statistics</p> </div>
-<div id="num-members-span"><p>Members:
-<a id="num-members" href="https://github.com/orgs/jpush/people"></a>
-</p></div>
-<div id="num-repos-span"><p>Repositories:
-<a id="num-repos" href="https://github.com/jpush"></a>
-</p></div>
-
-</div>
-</div>
-
-<div id="right_box">
-  <div id="slogan_img"><img src="img/slogan_img.png"></div>
-  <div id="slogan_en"><p>Powering mobile apps</p></div>
-  <div id="slogan_zh"><p>极光，为你的移动应用加油！</p></div>
-</div>
-</div>
-
-</div>
-
-<div id="wrap">
-<div id="wrapper">
-
-  <div id="repos">
-
-  </div>
-
-  <div id="loading"> 
-  <p id="content">
-  loading
-  </p>
-  </div>
-</div>
-</div>
-
-<a href=""></a>
-</body>
 </html>
