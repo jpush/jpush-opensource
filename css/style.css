@@ -166,6 +166,11 @@
     color: #FFFFFF;
   }
 
+    #num-members-span a,#num-repos-span a
+  {
+    color: #72d3ef;
+  }
+
     #bottom_box #num-repos-span
   {
     margin-left: 40px;
