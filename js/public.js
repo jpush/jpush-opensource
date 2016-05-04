@@ -26,11 +26,14 @@ $.get("https://api.github.com/orgs/jpush/repos",function(data,status){
           li_name.setAttribute("class", "name"); 
           ul_div.appendChild(li_name);
 
-          var li_language=document.createElement("li");
-          var language=document.createTextNode(obj[i].language);
-          li_language.appendChild(language);  
-          li_language.setAttribute("class", "language");     
-          ul_div.appendChild(li_language);
+          if (obj[i].language!=null) {
+                var li_language=document.createElement("li");
+                var language=document.createTextNode(obj[i].language);
+                li_language.appendChild(language);  
+                li_language.setAttribute("class", "language");     
+                ul_div.appendChild(li_language);
+          }
+
 
           var li_description=document.createElement("li");
           var description=document.createTextNode(obj[i].description);
