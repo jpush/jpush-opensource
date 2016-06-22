@@ -42,6 +42,14 @@ $.get("https://api.github.com/orgs/jpush/repos",function(data,status){
 
           ul_div.appendChild(li_description);
 
+
+          var li_stars=document.createElement("li");
+          var stars=document.createTextNode("Star"+" : "+obj[i].stargazers_count);
+          li_stars.appendChild(stars); 
+          li_stars.setAttribute("class", "language");  
+
+          ul_div.appendChild(li_stars);
+
           repos.appendChild(ul);
         }
     }
