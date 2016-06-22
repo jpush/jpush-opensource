@@ -236,8 +236,8 @@ body {
 
 .language {
   color:#bfc4c7;
-  padding-right: 30px; 
   float: left; 
+  width: 50%;
 }
 
 .star {
