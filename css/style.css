@@ -229,9 +229,19 @@ body {
   color:#72d3ef;
 }
 .description {
+  width: 100%;
   font-size:14px;
   color:#dee2e5;
 }
+
 .language {
   color:#bfc4c7;
+  padding-right: 30px; 
+  float: left; 
 }
+
+.star {
+  color:#bfc4c7;
+}
+
+
